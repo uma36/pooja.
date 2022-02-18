@@ -1,0 +1,10 @@
+n=int(input('enter a number:'))
+factorial = 1
+if (n < 0):
+    print('not possible')
+elif (n < 2):
+    print('{}! = {}'. format(n, factorial))
+else:
+    for num in range(n, 1, -1):
+        factorial = factorial * num
+    print('{}! = {}'.format(n, factorial))
